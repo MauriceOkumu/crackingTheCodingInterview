@@ -103,7 +103,7 @@ const computeMetrics = (n, k) => {
         sequencedArray[i] < sequencedArray[i + 1] ? trackDiffs.increaseDifference++ : '';  
         sequencedArray[i] > sequencedArray[i + 1] ? trackDiffs.decreaseDifference++ : '';
         };
-        //TODO :Need mathematical equation for adding differences. Working only if k is 3 
+        //TODO :Need mathematical equation (Fibonacci) for adding differences. Working only if k is 3 
         trackDiffs.increaseDifference === k-1 ? trackDiffs.increaseDifference++ : null; 
         k - trackDiffs.decreaseDifference === 1 ? trackDiffs.decreaseDifference++ : null;
       
@@ -131,7 +131,7 @@ for (var i = 0; i < 20; i++) {
   valuesToTestTime.push(randomnumber)
 
 }
-// console.log(computeMetrics(valuesToTestTime, 3));
+console.log(computeMetrics(valuesToTestTime, 3));
 // console.log('Trying to come up with equation =>:',(2 + 3) % 3)
 
 
