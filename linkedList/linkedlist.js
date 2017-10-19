@@ -27,26 +27,7 @@ LinkedList.prototype.add = function(value){
 };
 
 
-// let input1 = new LinkedList();
-// input1.add(6)
-// input1.add(5)
-// input1.add(9)
-// input1.add(2)
 
-let input2 = new LinkedList();
-input2.add(1)
-input2.add(7)
-input2.add(3)
-input2.add(8)
- // input2.head.next.next.next = input2.head.next;
-// input2.add(5)
-// input2.add(9)
-// input2.add(2)
-// console.log (input2)
-
-
-
-// console.log(checkCircular(input2));
 module.exports =  LinkedList;
 
 

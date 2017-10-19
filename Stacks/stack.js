@@ -26,12 +26,14 @@ const createStacksWithArray = (arr) => {
 	var st = new Stack()
 	var st2 = new Stack()
 	var st3 = new Stack()
-	stackArrays.push(st,st2, st3)
 	//iterate through the arr
 	// console.log('this should be one stack => :',stackArrays[0].push(8))
-	for (var i = start; i < arr.length; i++) {
-      
+	for (var i = start; i < arr.length; i+=stop) {
+      st.push(arr[i]);  
+      st2.push(arr[i + 1]);  
+      st3.push(arr[i + 2]);  
 	}
+	stackArrays.push(st,st2, st3)
 
 	return stackArrays;
 }
