@@ -30,7 +30,7 @@ list.size--;
 var val = slowNode.next;
 slowNode.next = slowNode.next.next;
 return val.value;
-return list;
+// return list;
 };
 
 
