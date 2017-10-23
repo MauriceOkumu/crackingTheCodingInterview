@@ -43,3 +43,4 @@ const checkPermutation = (str, str2) => {
 const replaceWith20  = (str) => str.trim().replace(/\s/g, '%20');
 
 // console.log(replaceWith20('Mr John Smith      '));
+
