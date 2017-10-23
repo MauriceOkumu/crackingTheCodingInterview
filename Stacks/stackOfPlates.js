@@ -39,5 +39,4 @@ class StackOfPlates {
 
 
 
-
 console.log(test.pop())
