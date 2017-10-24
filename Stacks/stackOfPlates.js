@@ -39,4 +39,4 @@ class StackOfPlates {
 
 
 
-console.log(test.pop())
+// console.log(test.pop())
