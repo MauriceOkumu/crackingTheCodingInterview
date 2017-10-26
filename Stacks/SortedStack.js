@@ -23,7 +23,6 @@ class SortedStack {
 	}
 	sortStack () {
 		let values = Object.keys(this.mainStorage.storage).sort((a, b) => a - b);
-		console.log(values)
 		while (values.length) {
 			this.sortedStorage.push(values.shift());
 		}
@@ -44,10 +43,13 @@ test.push(9);
 test.push(6);
 test.push(7);
  let obj = test.mainStorage.storage;
- let arr = [1,2,3,7,9,4]
+ let arr = [4,1,2,3,7,9]
 
- let testing = arr.reduce((a, b)=>{
- 	return a < b ? a : b;
+ let testing = arr.reduce((a, b, i)=>{
+ 	// let res = [];
+ 	console.log('a', a, 'b ', b,'i', i)
+ 	  b < arr[i + 1] ? a.push(b) : a.push(arr[i]);
+ 	 return a;
  },[]);
 // test.sortStack();
 console.log(testing);
